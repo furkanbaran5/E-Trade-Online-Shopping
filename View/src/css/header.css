@@ -1,0 +1,134 @@
+/* Genel ayarlar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 auto;
+}
+
+.logo {
+    width: 150px;
+    height: 100px;
+}
+
+.main-menu a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    position: relative;
+}
+
+.main-menu a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: orange;
+    transition: width .3s;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+
+.main-menu a:hover::after {
+    width: 100%;
+}
+
+.main-menu a.active {
+    color: orange;
+    border-bottom: 2px solid orange;
+    padding-bottom: 5px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    max-width: auto;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-bar button {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-left: 0;
+    background-color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.user-cart a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    position: relative;
+}
+
+.user-cart a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: orange;
+    transition: width .3s;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+
+.user-cart a:hover::after {
+    width: 100%;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+}
+
+.bottom-nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    position: relative;
+}
+
+.bottom-nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: orange;
+    transition: width .3s;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+
+.bottom-nav a:hover::after {
+    width: 100%;
+}

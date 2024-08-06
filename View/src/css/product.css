@@ -1,0 +1,168 @@
+/* Ürün Detay Sayfası Stili */
+.product-detail {
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: auto;
+    padding: 20px;
+}
+
+.product-detail .product-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-detail .product-image img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.product-detail .product-info {
+    padding: 10px;
+}
+
+.product-detail .product-title {
+    font-size: 50px;
+    font-weight: bold;
+    color: #333;
+}
+
+.product-detail .product-price {
+    font-size: 30px;
+    color: #e94560;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.product-detail .product-description {
+    font-size: 30px;
+    color: #24420a;
+    margin-bottom: 20px;
+}
+
+.product-detail .product-actions {
+    text-align: center;
+}
+
+.product-detail .product-actions button {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-detail .product-actions button:hover {
+    background-color: #0f3460;
+}
+
+/* Responsive Tasarım için Medya Sorguları */
+@media (max-width: 768px) {
+    .product-detail {
+        padding: 15px;
+    }
+
+    .product-detail .product-title {
+        font-size: 20px;
+    }
+
+    .product-detail .product-price {
+        font-size: 18px;
+    }
+
+    .product-detail .product-description {
+        font-size: 14px;
+    }
+
+    .product-detail .product-actions button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+
+a {
+    text-decoration: none;
+    /* Altını çizme stilini kaldırır */
+    color: inherit;
+    /* Bağlantı rengini bağlantının içindeki metnin rengi olarak ayarlar */
+}
+
+a:hover {
+    text-decoration: none;
+    /* Üzerine gelindiğinde altını çizer */
+    color: orange;
+    /* Üzerine gelindiğinde bağlantı rengini değiştirir */
+}
+
+
+
+.size:focus {
+    border: 1px solid orange;
+    background-color: #ffe0b2;
+}
+
+.size-selector {
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 250px;
+}
+
+.recommendation {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.recommendation img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.size-info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.size-info .last-items {
+    color: red;
+}
+
+.size-info .size-chart {
+    text-decoration: none;
+    color: #333;
+}
+
+.sizes {
+    display: flex;
+    justify-content: center;
+}
+
+.sizes input[type="radio"] {
+    display: none;
+}
+
+.size {
+    border: 1px solid #ddd;
+    background-color: #dccece;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 6px;
+    transition: background-color 0.3s;
+}
+
+.size:hover {
+    background-color: #f0f0f0;
+}
+
+.sizes input[type="radio"]:checked+.size {
+    border: 1px solid orange;
+    background-color: #ffe0b2;
+}

@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  php:
+    build: .
+    ports:
+      - "port"
+    volumes:
+      - ./folder:/var/www/html
